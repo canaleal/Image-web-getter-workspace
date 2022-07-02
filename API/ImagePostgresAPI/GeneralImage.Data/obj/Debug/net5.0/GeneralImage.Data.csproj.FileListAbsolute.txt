@@ -1,0 +1,12 @@
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\bin\Debug\net5.0\GeneralImage.Data.deps.json
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\bin\Debug\net5.0\GeneralImage.Data.dll
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\bin\Debug\net5.0\ref\GeneralImage.Data.dll
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\bin\Debug\net5.0\GeneralImage.Data.pdb
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.csproj.AssemblyReference.cache
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.AssemblyInfoInputs.cache
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.AssemblyInfo.cs
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.csproj.CoreCompileInputs.cache
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.dll
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\ref\GeneralImage.Data.dll
+C:\Users\alexc\Pictures\Websites\ImageWebGetterWorkspace\API\ImagePostgresAPI\GeneralImage.Data\obj\Debug\net5.0\GeneralImage.Data.pdb
