@@ -5,6 +5,7 @@ import { useFetch } from '../hooks/fetch-hook';
 import Error from '../components/Error';
 import PageHeader from '../components/PageHeader';
 import AttentionBar from '../components/AttentionBar';
+import GridLayout from '../layouts/GridLayout';
 
 const Rule = () => {
   const { data, error, isLoaded } = useFetch(Data.RULE_URL);
@@ -15,7 +16,7 @@ const Rule = () => {
         ? <Error />
         : <p />}
 
-      {isLoaded === true && error === false
+      {isLoaded === true && error === false 
 
         ? (
           <>
@@ -25,8 +26,11 @@ const Rule = () => {
             <AttentionBar message="This page contains my work, as well as my favorite pieces from other artists." />
 
             <GridLayout id="gallery" columns=" md:grid-cols-3">
-              {data.map((artElement) => (
-                <GalleryCard key={artElement.id} artElement={artElement} />
+              {data.map((item, index) => (
+                <div key={index} className="flex flex-col justify-center items-center">
+                  <img src={item.image} alt={item.title} className="w-full h-auto" />
+                  <p className="text-center text-sm">{item.title}</p>
+                </div>
               ))}
             </GridLayout>
 
