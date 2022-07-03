@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { getDataWithAxios } from '../services/fetch-data';
 
 export const useFetch = (url : string) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
