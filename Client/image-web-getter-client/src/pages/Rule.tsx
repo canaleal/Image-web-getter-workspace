@@ -16,7 +16,7 @@ const Rule = () => {
         ? <Error />
         : <p />}
 
-      {isLoaded === true && error === false 
+      {isLoaded === true && error === false
 
         ? (
           <>
@@ -25,14 +25,13 @@ const Rule = () => {
 
             <AttentionBar message="This page contains my work, as well as my favorite pieces from other artists." />
 
-        
-      
-            
+
+
+
             <GridLayout id="gallery" columns=" md:grid-cols-3">
-              {data.map((item, index) => (
-                <div key={index} className="flex flex-col justify-center items-center">
-                  <img src={item.image} alt={item.title} className="w-full h-auto" />
-                  <p className="text-center text-sm">{item.title}</p>
+              {data.map((ruleObject) => (
+                <div key={ruleObject.id}>
+                  <p>{ruleObject.title}</p>
                 </div>
               ))}
             </GridLayout>
