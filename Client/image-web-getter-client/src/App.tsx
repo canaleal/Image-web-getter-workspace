@@ -1,26 +1,23 @@
 import React from 'react';
 import './styles/style.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
 
+import AppLayout from './layouts/AppLayout';
 import Home from './pages/Home';
 
 function App() {
   return (
-    <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/rule">Rule</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Route path="/"  element={<Home />} />
-
-    </Router>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<AppLayout />}>
+       <Route index element={<Home />} />
+      </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
