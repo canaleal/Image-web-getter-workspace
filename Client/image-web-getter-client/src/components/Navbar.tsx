@@ -7,14 +7,14 @@ function Navbar() {
       <Link to="/" className="nav-item" aria-label="Portfolio">
         <div className="nav-link logo">
           <i className="fa fa-circle fa-2x" aria-hidden="true" />
-          <span className="link-text">Canales</span>
+          <span className="link-text">Home</span>
         </div>
       </Link>
 
-      <Link to="/projects" className="nav-item" aria-label="Projects">
+      <Link to="/rule" className="nav-item" aria-label="Rule">
         <div className="nav-link">
           <i className="fa fa-code fa-2x" aria-hidden="true" />
-          <span className="link-text">Projects</span>
+          <span className="link-text">Rule</span>
         </div>
       </Link>
 
@@ -24,26 +24,6 @@ function Navbar() {
           <span className="link-text">Gallery</span>
         </div>
       </Link>
-
-      <a href="https://github.com/canaleal" target="_blank" rel="noreferrer" className="nav-item" aria-label="Github">
-        <div className="nav-link">
-          <i className="fa fa-github fa-2x" aria-hidden="true" />
-          <span className="link-text">Github</span>
-        </div>
-      </a>
-      <a href="https://bitbucket.org/Canaleal/" target="_blank" rel="noreferrer" className="nav-item" aria-label="Bitbucket">
-        <div className="nav-link">
-          <i className="fa fa-bitbucket fa-2x" aria-hidden="true" />
-          <span className="link-text">Bitbucket</span>
-        </div>
-      </a>
-
-      <a href="https://www.linkedin.com/in/alex-canales" target="_blank" rel="noreferrer" className="nav-item" aria-label="Linkedin">
-        <div className="nav-link">
-          <i className="fa fa-linkedin fa-2x" aria-hidden="true" />
-          <span className="link-text">LinkedIn</span>
-        </div>
-      </a>
 
     </nav>
   );

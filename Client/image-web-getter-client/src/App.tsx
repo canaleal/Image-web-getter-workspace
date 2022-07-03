@@ -8,6 +8,7 @@ import {
 
 import AppLayout from './layouts/AppLayout';
 import Home from './pages/Home';
+import Rule from './pages/Rule';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<AppLayout />}>
        <Route index element={<Home />} />
+       <Route path="rule" element={<Rule />} />
       </Route>
     </Routes>
     </BrowserRouter>
