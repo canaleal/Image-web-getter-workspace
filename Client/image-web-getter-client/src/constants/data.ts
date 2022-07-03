@@ -6,7 +6,7 @@ function getFullWindowPath() {
 }
 
 export const Data = {
-  RULE_URL: `${getFullWindowPath()}/data/rule_images.geojson`,
+  RULE_URL: `${getFullWindowPath()}/data/rule_images.json`,
 };
 
 export default Data;

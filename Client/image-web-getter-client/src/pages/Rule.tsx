@@ -26,9 +26,7 @@ const Rule = () => {
 
             <AttentionBar message="This page contains my work, as well as my favorite pieces from other artists." />
 
-
-
-
+  
             <GridLayout id="gallery" columns=" md:grid-cols-3" >
                 {data.map((item, index) => (
                   <ImageCard key={item.id} id={item.id} colSpan="1" containerlink={item.container_link} imglink={item.image_link} title={item.name} isNsfw={false} />

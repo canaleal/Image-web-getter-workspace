@@ -12,13 +12,14 @@ export const useFetch = (url : string) => {
     async function getData() {
       try {
         const dataJson = await getDataWithAxios(url);
-  
-        if (dataJson && dataJson.length > 0) {
-          setData(dataJson);
+        
+        if (dataJson && dataJson['Data'].length > 0) {
+          setData(dataJson['Data']);
         } else {
           throw new Error('List is empty');
         }
-      } catch {
+      } catch (error) {
+        console.log(error);
         setError(true);
       } finally {
         setIsLoaded(true);
