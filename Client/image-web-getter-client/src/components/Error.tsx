@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
-import PageHeader from 'components/PageHeader';
+import PageHeader from './PageHeader';
 
-function Error() {
+const Error = () => {
   return (
     <section>
 

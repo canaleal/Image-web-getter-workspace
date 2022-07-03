@@ -2,6 +2,10 @@
 import React from 'react'
 import { Data } from '../constants/index';
 import { useFetch } from '../hooks/fetch-hook';
+import Error from '../components/Error';
+import PageHeader from '../components/PageHeader';
+import AttentionBar from '../components/AttentionBar';
+
 const Rule = () => {
   const { data, error, isLoaded } = useFetch(Data.RULE_URL);
 
