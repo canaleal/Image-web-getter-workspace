@@ -99,7 +99,7 @@ hr {
   }
   
   .paginationItem {
-	background: #fff;
+	
 	border: 2px solid rgb(0, 0, 0);
 	border-radius: 50%;
 	height: 45px;
@@ -124,12 +124,13 @@ hr {
 	height: 45px;
 	width: 45px;
 	position: relative;
+	margin: 0 5px;
 	cursor: pointer;
   }
   
   .paginationItem.active {
-	border: 2px solid $highlight;
-	color: $highlight;
+	color: white;
+	background-color: $highlight;
 	pointer-events: none;
   }
   
@@ -137,5 +138,6 @@ hr {
   .next.disabled {
 	pointer-events: none;
 	box-shadow: none;
-	color: #999;
+	color: rgb(192, 189, 189);
+	border: 2px solid rgb(192, 189, 189);
   }

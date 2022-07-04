@@ -116,7 +116,6 @@ hr {
 }
 
 .paginationItem {
-  background: #fff;
   border: 2px solid black;
   border-radius: 50%;
   height: 45px;
@@ -142,12 +141,13 @@ hr {
   height: 45px;
   width: 45px;
   position: relative;
+  margin: 0 5px;
   cursor: pointer;
 }
 
 .paginationItem.active {
-  border: 2px solid #4071f4;
-  color: #4071f4;
+  color: white;
+  background-color: #4071f4;
   pointer-events: none;
 }
 
@@ -156,7 +156,8 @@ hr {
   pointer-events: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #999;
+  color: #c0bdbd;
+  border: 2px solid #c0bdbd;
 }
 
 .nav {
