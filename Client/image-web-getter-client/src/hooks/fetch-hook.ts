@@ -13,8 +13,8 @@ export const useFetch = (url : string) => {
       try {
         const dataJson = await getDataWithAxios(url);
         
-        if (dataJson && dataJson['Data'].length > 0) {
-          setData(dataJson['Data']);
+        if (dataJson && dataJson.length > 0) {
+          setData(dataJson);
         } else {
           throw new Error('List is empty');
         }
