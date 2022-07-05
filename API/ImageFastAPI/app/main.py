@@ -1,41 +1,22 @@
 import uvicorn
 from fastapi import FastAPI
-from fastapi_sqlalchemy import DBSessionMiddleware, db
-
-from app.schema import RuleImage as SchemaRuleImage
-from app.schema import RuleImage
-
-from app.models import RuleImage as RuleImage
+from fastapi_sqlalchemy import DBSessionMiddleware
+from app.routers import ruleImages
 
 import os
 from dotenv import load_dotenv
-
 load_dotenv('.env')
 
 
 app = FastAPI()
-
-# to avoid csrftokenError
 app.add_middleware(DBSessionMiddleware, db_url=os.environ['DATABASE_URL'])
+
 
 @app.get("/")
 async def root():
     return {"message": "hello world"}
 
-
-@app.post('/rule_images/', response_model=SchemaRuleImage)
-async def ruleImage(ruleImage: SchemaRuleImage):
-    db_ruleImage= RuleImage(container_link=ruleImage.container_link, image_link=ruleImage.image_link, name = ruleImage.name)
-    db.session.add(db_ruleImage)
-    db.session.commit()
-    return db_ruleImage
-
-@app.get('/rule_images/')
-async def ruleImage():
-    ruleImage = db.session.query(RuleImage).all()
-    return ruleImage
-
-
+app.include_router(ruleImages.router)
   
 # To run locally
 if __name__ == '__main__':
