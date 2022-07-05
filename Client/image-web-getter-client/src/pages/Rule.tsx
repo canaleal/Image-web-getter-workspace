@@ -25,7 +25,7 @@ const Rule = () => {
         ? (
           <>
 
-            <PageHeader title="RULE" color="bg-green" zHeight="z-10" />
+            <PageHeader title="RULE IMAGES" color="bg-green" zHeight="z-10" />
 
         
             <Pagination

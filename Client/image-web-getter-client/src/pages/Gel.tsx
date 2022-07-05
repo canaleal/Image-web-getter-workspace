@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/fetch-hook';
 import Error from '../components/Error';
 import PageHeader from '../components/PageHeader';
 import AttentionBar from '../components/AttentionBar';
-import ImageCard from '../components/ImageCard';
+import TableCard from '../components/TableCard';
 import { Pagination } from '../layouts/Pagination';
 
 
@@ -25,12 +25,12 @@ const Rule = () => {
         ? (
           <>
 
-            <PageHeader title="Gel" color="bg-green" zHeight="z-10" />
+            <PageHeader title="GEL IMAGES" color="bg-green" zHeight="z-10" />
 
         
             <Pagination
               data={data}
-              RenderComponent={ImageCard}
+              RenderComponent={TableCard}
               pageLimit={10}
               dataLimit={18}
             />
