@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi_sqlalchemy import DBSessionMiddleware
-from app.routers import ruleImages
+from app.routers import ruleImages, gelImages
 from fastapi.middleware.cors import CORSMiddleware
 
 import os
@@ -31,6 +31,7 @@ async def root():
     return {"message": "hello world"}
 
 app.include_router(ruleImages.router)
+app.include_router(gelImages.router)
   
 # To run locally
 if __name__ == '__main__':

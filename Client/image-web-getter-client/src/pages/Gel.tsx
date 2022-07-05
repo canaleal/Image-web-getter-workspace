@@ -11,7 +11,7 @@ import { Pagination } from '../layouts/Pagination';
 
 
 const Rule = () => {
-  const { data, error, isLoaded } = useFetch(Data.RULE_URL);
+  const { data, error, isLoaded } = useFetch(Data.GEL_URL);
 
 
   return (
@@ -25,7 +25,7 @@ const Rule = () => {
         ? (
           <>
 
-            <PageHeader title="RULE" color="bg-green" zHeight="z-10" />
+            <PageHeader title="Gel" color="bg-green" zHeight="z-10" />
 
         
             <Pagination

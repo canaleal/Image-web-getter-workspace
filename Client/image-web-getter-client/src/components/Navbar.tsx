@@ -18,6 +18,13 @@ function Navbar() {
         </div>
       </Link>
 
+      <Link to="/gel" className="nav-item" aria-label="Rule">
+        <div className="nav-link">
+          <i className="fa fa-pencil fa-2x" aria-hidden="true" />
+          <span className="link-text">Gel</span>
+        </div>
+      </Link>
+
       <Link to="/gallery" className="nav-item" aria-label="Gallery">
         <div className="nav-link">
           <i className="fa fa-download fa-2x" aria-hidden="true" />

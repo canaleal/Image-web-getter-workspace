@@ -7,6 +7,7 @@ function getFullWindowPath() {
 
 export const Data = {
   RULE_URL: `http://127.0.0.1:8000/rule_images/`,
+  GEL_URL: `http://127.0.0.1:8000/gel_images/`,
 };
 
 export default Data;
