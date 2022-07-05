@@ -6,7 +6,7 @@ function getFullWindowPath() {
 }
 
 export const Data = {
-  RULE_URL: `${getFullWindowPath()}/data/rule_images.json`,
+  RULE_URL: `http://127.0.0.1:8000/rule_images/`,
 };
 
 export default Data;
