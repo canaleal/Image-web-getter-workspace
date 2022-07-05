@@ -1,9 +1,9 @@
-import { Rule_Image } from './../types/Rule_Image';
+import { General_Image } from '../types/General_Image';
 import { useEffect, useState } from 'react';
 import { getDataWithAxios } from '../services/fetch-data';
 
 export const useFetch = (url : string) => {
-  const [data, setData] = useState<Rule_Image[]>([]);
+  const [data, setData] = useState<General_Image[]>([]);
   const [error, setError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 

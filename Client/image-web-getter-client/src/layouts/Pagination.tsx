@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import GridLayout from '../layouts/GridLayout';
-import { Rule_Image } from '../types/Rule_Image';
+import { General_Image } from '../types/General_Image';
 
 export const Pagination = ({ data, RenderComponent, pageLimit, dataLimit }: any) => {
     const [totalPages] = useState(Math.round(data.length / dataLimit));
@@ -45,7 +45,7 @@ export const Pagination = ({ data, RenderComponent, pageLimit, dataLimit }: any)
     return (
       <>
         <GridLayout id="gallery" columns=" md:grid-cols-6">
-          {getPaginatedData().map((item: Rule_Image) => (
+          {getPaginatedData().map((item: General_Image) => (
             <RenderComponent key={item.id} id={item.id} colSpan="1" containerlink={item.container_link} imglink={item.image_link} title={item.name} isNsfw={false} />
           ))}
         </GridLayout>
