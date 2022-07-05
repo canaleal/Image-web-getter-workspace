@@ -46,7 +46,7 @@ export const Pagination = ({ data, RenderComponent, pageLimit, dataLimit }: any)
       <>
         <GridLayout id="gallery" columns=" md:grid-cols-6">
           {getPaginatedData().map((item: General_Image) => (
-            <RenderComponent key={item.id} id={item.id} colSpan="1" containerlink={item.container_link} imglink={item.image_link} title={item.name} isNsfw={false} />
+            <RenderComponent key={item.id} id={item.id} colSpan="1" containerlink={item.container_link} imglink={item.image_link} title={item.name} isNsfw={true} />
           ))}
         </GridLayout>
   
