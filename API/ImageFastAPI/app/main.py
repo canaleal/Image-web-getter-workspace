@@ -2,9 +2,10 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi_sqlalchemy import DBSessionMiddleware, db
 
-from schema import RuleImage as SchemaRuleImage
+from app.schema import RuleImage as SchemaRuleImage
+from app.schema import RuleImage
 
-from models import RuleImage as RuleImage
+from app.models import RuleImage as RuleImage
 
 import os
 from dotenv import load_dotenv
@@ -22,14 +23,14 @@ async def root():
     return {"message": "hello world"}
 
 
-@app.post('/rule_image/', response_model=SchemaRuleImage)
+@app.post('/rule_images/', response_model=SchemaRuleImage)
 async def ruleImage(ruleImage: SchemaRuleImage):
     db_ruleImage= RuleImage(container_link=ruleImage.container_link, image_link=ruleImage.image_link, name = ruleImage.name)
     db.session.add(db_ruleImage)
     db.session.commit()
     return db_ruleImage
 
-@app.get('/rule_image/')
+@app.get('/rule_images/')
 async def ruleImage():
     ruleImage = db.session.query(RuleImage).all()
     return ruleImage
