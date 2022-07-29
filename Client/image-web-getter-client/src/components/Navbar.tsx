@@ -11,6 +11,13 @@ function Navbar() {
         </div>
       </Link>
 
+      <Link to="/rule_scroll" className="nav-item" aria-label="Rule">
+        <div className="nav-link">
+          <i className="fa fa-paint-brush fa-2x" aria-hidden="true" />
+          <span className="link-text">Rule Scroll</span>
+        </div>
+      </Link>
+
       <Link to="/rule_pagination" className="nav-item" aria-label="Rule">
         <div className="nav-link">
           <i className="fa fa-paint-brush fa-2x" aria-hidden="true" />
