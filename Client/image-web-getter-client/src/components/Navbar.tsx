@@ -11,10 +11,10 @@ function Navbar() {
         </div>
       </Link>
 
-      <Link to="/rule" className="nav-item" aria-label="Rule">
+      <Link to="/rule_pagination" className="nav-item" aria-label="Rule">
         <div className="nav-link">
           <i className="fa fa-paint-brush fa-2x" aria-hidden="true" />
-          <span className="link-text">Rule</span>
+          <span className="link-text">Rule Pagination</span>
         </div>
       </Link>
 

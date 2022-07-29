@@ -8,7 +8,7 @@ import {
 
 import AppLayout from './layouts/AppLayout';
 import Home from './pages/Home';
-import Rule from './pages/Rule';
+import RulePagination from './pages/RulePagination';
 import Gel from './pages/Gel';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<AppLayout />}>
        <Route index element={<Home />} />
-       <Route path="rule" element={<Rule />} />
+       <Route path="rule_pagination" element={<RulePagination />} />
        <Route path="gel" element={<Gel />} />
       </Route>
     </Routes>
