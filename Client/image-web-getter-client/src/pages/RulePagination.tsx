@@ -9,8 +9,7 @@ import ImageCard from '../components/ImageCard';
 import { Pagination } from '../layouts/Pagination';
 
 
-
-const Rule = () => {
+const RulePagination = () => {
   const { data, error, isLoaded } = useFetch(Data.RULE_URL);
 
 
@@ -43,4 +42,4 @@ const Rule = () => {
 }
 
 
-export default Rule;
+export default RulePagination;
